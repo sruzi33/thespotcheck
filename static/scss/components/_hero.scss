@@ -1,0 +1,32 @@
+%hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero {
+  @extend %hero;
+  height: calc(100vh - var(--navbar-height));
+}
+
+.hero-full {
+  height: 100vh;
+  margin: calc(var(--navbar-height) * -1);
+}
+
+.hero-half {
+  height: 50vh;
+  min-height: 500px;
+}
+
+.hero-home {
+  padding-top: 200px;
+  .hero-title {
+    margin-bottom: 20px;
+  }
+
+  .hero-subtitle {
+    margin-bottom: 50px;
+  }
+  
+}
